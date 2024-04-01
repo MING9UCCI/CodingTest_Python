@@ -13,6 +13,3 @@ def solution(arr):
             else:
                 stk.pop()
     return stk
-
-
-# 1, 4, 2, 5, 3
