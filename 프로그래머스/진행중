@@ -1,0 +1,21 @@
+# 프로그래머스
+# 문제 : 실패율
+
+def solution(N, stages):
+    answer = []
+    fail_rate = [0] * N
+    for stage in range(1, N+1):
+        temp = []
+        for part in range(len(stages)):
+            if not stages[part] > stage:
+                fail_rate[stage-1] += 1/len(stages)
+                temp.append(part)
+                #print(f'temp = {temp}\n part = {part}\n stage = {stage}')
+        if not len(temp) == 0:
+            for i in range(len(temp)):
+                stages[temp[i]] = 'remove'
+                stages.remove('remove')
+    print(fail_rate)
+    return answer
+    
+print(solution(5, [2, 1, 2, 6, 2, 4, 3, 3]))
