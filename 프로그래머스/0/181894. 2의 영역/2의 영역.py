@@ -16,3 +16,5 @@ def solution(arr):
     for i in range(start, end+1):
         answer.append(arr[i])
     return answer
+
+# 좀 길고 살짝 더럽게 짜진 것 같아서 아쉽다. 좀 더 공부를 해야겠다!!
