@@ -1,0 +1,6 @@
+a, b = input().split()
+a = list(a)
+b = list(b)
+a = ''.join(reversed(a))
+b = ''.join(reversed(b))
+print(a if a>b else b)
