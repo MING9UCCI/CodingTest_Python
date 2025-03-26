@@ -1,10 +1,12 @@
-n = int(input())  
+import sys
+
+n = int(sys.stdin.readline().strip())
 stack = []  
 result = []  
 temp = 1  
 
 for _ in range(n):
-    k = int(input())  
+    k = int(sys.stdin.readline().strip())
 
     while temp <= k:
         stack.append(temp)
